@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Academy.cs" />
     <Compile Include="Fight.cs" />
     <Compile Include="Fighter.cs" />
     <Compile Include="Fraction.cs" />

@@ -12,5 +12,13 @@ namespace ConsoleApp1
     {
         public string Name { get; set; }
         public List<Fighter> Fighters { get; set; }
+
+
+        public void GetSquard()
+        {
+            Squad squad = new Squad();
+            squad.Name = "KorribanSithAcademy";
+            squad.Name = "CoruscantJediAcademy";
+        }
     }
 }

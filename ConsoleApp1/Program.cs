@@ -11,11 +11,12 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            //Fighter jedi = new Fighter();
-            //jedi.GetJediWarior();
 
-            //Fighter sith = new Fighter();
-            //sith.GetSithWarior();
+            
+
+            Fight fight = new Fight();
+            fight.AddSquard();
+            
 
 
             Console.ReadKey();

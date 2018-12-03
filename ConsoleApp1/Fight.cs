@@ -10,11 +10,25 @@ namespace ConsoleApp1
 {
     public class Fight
     {
-        readonly Fighter jedi = new Fighter();
-        
-       
+        public void AddSquard()
+        {
 
+            Squad squadName = new Squad();
+            squadName.Name = Academy.CorusantJediAcademy.ToString();
+            Console.WriteLine($"Academy Name: {squadName.Name}");
             Fighter sith = new Fighter();
-       // sith.GetSithWarior();
+            
+           
+
+            Fighter jedi = new Fighter();
+            jedi.GetJediWarior();
+
+
+            //Squad squadOne = new Squad();
+            //squadOne.Name = "KorribanSithAcademy";
+
+        }
+
+
     }
 }
