@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace ConsoleApp1
 {
@@ -10,6 +11,14 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            //Fighter jedi = new Fighter();
+            //jedi.GetJediWarior();
+
+            //Fighter sith = new Fighter();
+            //sith.GetSithWarior();
+
+
+            Console.ReadKey();
         }
     }
 }
