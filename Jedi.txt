@@ -1,10 +1,10 @@
-Luke Skywalker
-Obi Van Kenobi
-Joda
+Obi-Wan Kenobi
+Quinlan Vos
+Luminara Unduli
+Qui-Gon Jinn
+Adi Gallia
+Shaak Ti
+Yoda
 Mace Windu
-Jedi1
-Jedi2
-Jedi3
-Jedi4
-Jedi5
-Jedi6
+Luke Skywalker
+Sifo Dyas
