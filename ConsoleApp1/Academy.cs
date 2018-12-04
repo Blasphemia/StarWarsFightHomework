@@ -9,6 +9,11 @@ namespace ConsoleApp1
     public enum Academy
     {
         KorribanSithAcademy,
-        CorusantJediAcademy
+        FirstSithSquad,
+        SecondSithSquad,
+        CorusantJediAcademy,
+        FirstJediSquad,
+        SecondJediSquad
+
     }
 }

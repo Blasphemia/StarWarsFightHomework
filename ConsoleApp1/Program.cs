@@ -15,7 +15,7 @@ namespace ConsoleApp1
             
 
             Fight fight = new Fight();
-            fight.AddSquard();
+            fight.AddSithFraction();
             
 
 

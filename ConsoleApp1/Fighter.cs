@@ -20,90 +20,100 @@ namespace ConsoleApp1
 
 
 
-        public void GetJediWarior()
+        //public string GetJediWarriorsName()
+        //{
+
+        //    List<string> Names = new List<string>();
+
+        //    string path = @"C:/Users/web/source/repos/ConsoleApp1/Jedi.txt";
+
+        //    try
+        //    {
+        //        using (StreamReader sr = new StreamReader(path, System.Text.Encoding.Default))
+        //        {
+        //            string line;
+        //            while ((line = sr.ReadLine()) != null)
+        //            {
+
+        //                Names.Add(line);
+        //            }
+        //        }
+        //    }
+        //    catch (Exception e)
+        //    {
+        //        Console.WriteLine(e.Message);
+        //    }
+
+        //    Random randoM = new Random();
+        //    int numOfName = randoM.Next(1, Names.Count + 1);
+        //    Fighter warriorsName = new Fighter() { Name = Names[numOfName] };
+
+        //    return warriorsName.Name;
+        //}
+
+
+        //public void GetSithWarriorsName()
+        //{
+
+        //    List<string> sithNames = new List<string>();
+
+        //    string path = @"C:/Users/web/source/repos/ConsoleApp1/Sith.txt";
+
+        //    try
+        //    {
+        //        using (StreamReader sr = new StreamReader(path, System.Text.Encoding.Default))
+        //        {
+        //            string line;
+        //            while ((line = sr.ReadLine()) != null)
+        //            {
+
+        //                sithNames.Add(line);
+        //            }
+        //        }
+        //    }
+        //    catch (Exception e)
+        //    {
+        //        Console.WriteLine(e.Message);
+        //    }
+
+        //    //Random randoM = new Random();
+        //    //int numOfName = randoM.Next(1, Names.Count + 1);
+        //    //Fighter warriorsName = new Fighter() { Name = Names[numOfName] };
+
+        //    //return warriorsName.Name;
+        //}
+
+
+
+        public int GetWarriorsHP()
         {
             Random rnd = new Random();
-            int dopHealth = 50 + rnd.Next(1, 31);
-            Console.WriteLine(dopHealth);
-            Random rand = new Random();
-            int dopAttack = 6 + rnd.Next(1, 7);
-            Console.WriteLine(dopAttack);
-            Random random = new Random();
-            int dopPower = 1 + rnd.Next(1, 5);
-            Console.WriteLine(dopPower);
-
-
-            List<string> Names = new List<string>();
-
-            string path = @"C:/Users/web/source/repos/ConsoleApp1/Jedi.txt";
-
-            try
-            {
-                using (StreamReader sr = new StreamReader(path, System.Text.Encoding.Default))
-                {
-                    string line;
-                    while ((line = sr.ReadLine()) != null)
-                    {
-
-                        Names.Add(line);
-                    }
-                }
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }
-
-            Random randoM = new Random();
-            int numOfName = randoM.Next(1, Names.Count + 1);
-            Fighter warior = new Fighter() { HP = dopHealth, Attack = dopAttack, Power = dopPower, Name = Names[numOfName] };
-
-            Console.WriteLine($"{warior.Attack} {warior.HP} {warior.Name} {warior.Power}");
+            int hp = 50 + rnd.Next(1, 31);
+            return hp;
         }
 
-        public void GetSithWarior()
+        public int GetWarriorsAttack()
         {
             Random rnd = new Random();
-            int dopHealth = 50 + rnd.Next(1, 31);
-            Console.WriteLine(dopHealth);
-            Random rand = new Random();
-            int dopAttack = 6 + rnd.Next(1, 7);
-            Console.WriteLine(dopAttack);
-            Random random = new Random();
-            int dopPower = 1 + rnd.Next(1, 5);
-            Console.WriteLine(dopPower);
-
-
-            List<string> Names = new List<string>();
-
-            string path = @"C:/Users/web/source/repos/ConsoleApp1/Sith.txt";
-
-            try
-            {
-                using (StreamReader sr = new StreamReader(path, System.Text.Encoding.Default))
-                {
-                    string line;
-                    while ((line = sr.ReadLine()) != null)
-                    {
-
-                        Names.Add(line);
-                    }
-                }
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }
-
-            Random randoM = new Random();
-            int numOfName = randoM.Next(1, Names.Count + 1);
-            Fighter warior = new Fighter() { HP = dopHealth, Attack = dopAttack, Power = dopPower, Name = Names[numOfName] };
-
-            Console.WriteLine($"{warior.Attack} {warior.HP} {warior.Name} {warior.Power}");
+            int attack = 6 + rnd.Next(1, 7);
+            return attack;
         }
 
+        public int GetWarriorsPower()
+        {
+            Random rnd = new Random();
+            int power = 1 + rnd.Next(1, 5);
+            return power;
+        }
 
-
+        public void GetFighter()
+        {
+            Fighter fighter = new Fighter() { Attack = GetWarriorsAttack(), Power = GetWarriorsPower(),
+                HP=GetWarriorsHP() };
+            
+           
+            
+        }
 
     }
 }
