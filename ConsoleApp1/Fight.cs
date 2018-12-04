@@ -24,7 +24,7 @@ namespace ConsoleApp1
             
             List<string> sithNames = new List<string>();
 
-            string path = @"C:/Users/web/source/repos/ConsoleApp1/Sith.txt";
+            string path = @"C:/Users/web/source/repos/StarWarsFightHomework/Sith.txt";
 
             try
             {
@@ -96,11 +96,11 @@ namespace ConsoleApp1
 
             List<string> jediNames = new List<string>();
 
-            string newpath = @"C:/Users/web/source/repos/ConsoleApp1/Jedi.txt";
+            string newpath = @"C:/Users/web/source/repos/StarWarsFightHomework/Jedi.txt";
 
             try
             {
-                using (StreamReader sr = new StreamReader(newpath, System.Text.Encoding.Default))
+                using (StreamReader sr = new StreamReader(newpath))
                 {
                     string line;
                     while ((line = sr.ReadLine()) != null)

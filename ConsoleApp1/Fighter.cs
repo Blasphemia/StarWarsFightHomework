@@ -20,69 +20,7 @@ namespace ConsoleApp1
 
 
 
-        //public string GetJediWarriorsName()
-        //{
-
-        //    List<string> Names = new List<string>();
-
-        //    string path = @"C:/Users/web/source/repos/ConsoleApp1/Jedi.txt";
-
-        //    try
-        //    {
-        //        using (StreamReader sr = new StreamReader(path, System.Text.Encoding.Default))
-        //        {
-        //            string line;
-        //            while ((line = sr.ReadLine()) != null)
-        //            {
-
-        //                Names.Add(line);
-        //            }
-        //        }
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        Console.WriteLine(e.Message);
-        //    }
-
-        //    Random randoM = new Random();
-        //    int numOfName = randoM.Next(1, Names.Count + 1);
-        //    Fighter warriorsName = new Fighter() { Name = Names[numOfName] };
-
-        //    return warriorsName.Name;
-        //}
-
-
-        //public void GetSithWarriorsName()
-        //{
-
-        //    List<string> sithNames = new List<string>();
-
-        //    string path = @"C:/Users/web/source/repos/ConsoleApp1/Sith.txt";
-
-        //    try
-        //    {
-        //        using (StreamReader sr = new StreamReader(path, System.Text.Encoding.Default))
-        //        {
-        //            string line;
-        //            while ((line = sr.ReadLine()) != null)
-        //            {
-
-        //                sithNames.Add(line);
-        //            }
-        //        }
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        Console.WriteLine(e.Message);
-        //    }
-
-        //    //Random randoM = new Random();
-        //    //int numOfName = randoM.Next(1, Names.Count + 1);
-        //    //Fighter warriorsName = new Fighter() { Name = Names[numOfName] };
-
-        //    //return warriorsName.Name;
-        //}
-
+       
 
 
         public int GetWarriorsHP()
