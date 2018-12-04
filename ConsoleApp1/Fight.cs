@@ -10,7 +10,7 @@ namespace ConsoleApp1
 {
     public class Fight
     {
-        public void AddSithFraction()
+        public void AddFraction()
         {
 
 
@@ -28,7 +28,7 @@ namespace ConsoleApp1
 
             try
             {
-                using (StreamReader sr = new StreamReader(path, System.Text.Encoding.Default))
+                using (StreamReader sr = new StreamReader(path))
                 {
                     string line;
                     while ((line = sr.ReadLine()) != null)
